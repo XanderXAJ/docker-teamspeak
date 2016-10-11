@@ -1,7 +1,9 @@
 # -----------------------------------------------------------------------------
 # docker-teamspeak
 #
-# Builds a basic docker image that can run TeamSpeak (http://teamspeak.com/).
+# Builds a basic Docker image that can run TeamSpeak 
+# TeamSpeak: http://teamspeak.com
+# Docker: http://docker.com
 # -----------------------------------------------------------------------------
 
 # Base system is the LTS version of Debian
