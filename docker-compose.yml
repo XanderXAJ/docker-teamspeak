@@ -7,4 +7,4 @@ server:
    - "10011:10011"
   volumes:
    - "/mnt/teamspeak:/data"
-  restart: always
+  restart: unless-stopped
