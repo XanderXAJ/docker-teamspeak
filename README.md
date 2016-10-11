@@ -9,7 +9,7 @@ For more information on TeamSpeak and check out it's [website][1].
 
 Running this will build you the latest docker-teamspeak image:
 
-    git clone https://github.com/overshard/docker-teamspeak
+    git clone https://github.com/xanderxaj/docker-teamspeak
     cd docker-teamspeak
     ./ts3-build.sh
 
