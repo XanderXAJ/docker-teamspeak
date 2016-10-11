@@ -5,7 +5,6 @@
 # (http://teamspeak.com/).
 #
 # Authors: Isaac Bythewood
-# Updated: May 18th, 2015
 # Require: Docker (http://www.docker.io/)
 # -----------------------------------------------------------------------------
 
