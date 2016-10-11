@@ -1,11 +1,7 @@
 # -----------------------------------------------------------------------------
 # docker-teamspeak
 #
-# Builds a basic docker image that can run TeamSpeak
-# (http://teamspeak.com/).
-#
-# Authors: Isaac Bythewood
-# Require: Docker (http://www.docker.io/)
+# Builds a basic docker image that can run TeamSpeak (http://teamspeak.com/).
 # -----------------------------------------------------------------------------
 
 # Base system is the LTS version of Debian
