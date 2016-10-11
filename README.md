@@ -54,7 +54,7 @@ docs][docker-memory] to enable support in your kernel.
 
 ## Managing TeamSpeak's data
 
-The TeamSpeak server's data is stored in a data-only container called `teamspeak-data`.
+The TeamSpeak server's data is stored in a named volume called `teamspeak`.
 
 A backup with the current date and time can be created by running:
 
@@ -64,10 +64,9 @@ That backup can be restored with:
 
     ./ts3-restore.sh <archiveName>
 
-All data can be erased by deleting the data-only container and then re-creating it:
+All data can be erased by deleting the `teamspeak` named volume; it'll be recreated when you next execute `ts3-run.sh`:
 
-    docker rm teamspeak-data
-    ./ts3-run.sh
+    docker volume rm teamspeak
 
 ## Server Admin Token
 
