@@ -8,7 +8,7 @@
 # Require: Docker (http://www.docker.io/)
 # -----------------------------------------------------------------------------
 
-# Base system is the LTS version of Ubuntu.
+# Base system is the LTS version of Debian
 FROM   debian:8
 
 # Set the Teamspeak version to download
