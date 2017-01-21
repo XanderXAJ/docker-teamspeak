@@ -2,8 +2,10 @@
 
 A nice and easy way to get a TeamSpeak server up and running using docker. For
 help on getting started with docker see the [official getting started guide][0].
-For more information on TeamSpeak and check out it's [website][1].
+For more information on TeamSpeak and [check out its website][teamspeak].
 
+[docker]: https://docs.docker.com/engine/getstarted/
+[teamspeak]: http://teamspeak.com/
 
 ## Building docker-teamspeak
 
@@ -48,8 +50,10 @@ You may get a warning relating to limits on startup, for example:
 
 This particular message means that RAM usage has been limited but swap has not.
 
-To remove the warnings and enforce the limits, follow the the instructions [in the Docker
+To remove the warnings and enforce the limits, follow the instructions [in the Docker
 docs][docker-memory] to enable support in your kernel.
+
+[docker-memory]: https://docs.docker.com/engine/installation/linux/ubuntulinux/#adjust-memory-and-swap-accounting
 
 ## Managing TeamSpeak's data
 
@@ -74,16 +78,13 @@ Search for "ServerAdmin privilege key created" and use that token on first conne
 
 ### Notes on the run command
 
- + `-v` is the volume you are mounting `-v=host_dir:docker_dir`
- + `overshard/teamspeak` is simply what I called my docker build of this image
- + `-d=true` allows this to run cleanly as a daemon, remove for debugging
- + `-p` is the port it connects to, `-p=host_port:docker_port`
+ + `-v` is the volume you are mounting `-v host_dir:docker_dir`
+ + `teamspeak` is the name of the image built by `ts3-build.sh`
+ + `-d` allows this to run cleanly as a daemon, remove for debugging
+ + `-p` is the port it connects to, `-p host_port:docker_port`
 
 ## Mumble Server Alternative
 
-Benjamin Denhartog has created an alternative [MurMur/Mumble server][2] if you're looking for an alternative to Teamspeak.
+Benjamin Denhartog has created an alternative [MurMur/Mumble server][docker-mumble] if you're looking for an alternative to Teamspeak.
 
-[0]: http://www.docker.io/gettingstarted/
-[1]: http://teamspeak.com/
-[docker-memory]: https://docs.docker.com/engine/installation/linux/ubuntulinux/#adjust-memory-and-swap-accounting
-[2]: https://github.com/bddenhartog/docker-murmur
+[docker-mumble]: https://github.com/bddenhartog/docker-murmur
