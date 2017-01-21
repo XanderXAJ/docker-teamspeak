@@ -1,7 +1,7 @@
 # -----------------------------------------------------------------------------
 # docker-teamspeak
 #
-# Builds a basic Docker image that can run TeamSpeak 
+# Builds a basic Docker image that can run TeamSpeak
 # TeamSpeak: http://teamspeak.com
 # Docker: http://docker.com
 # -----------------------------------------------------------------------------
