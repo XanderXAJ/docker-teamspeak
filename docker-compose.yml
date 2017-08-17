@@ -1,0 +1,17 @@
+version: '3'
+services:
+  teamspeak:
+    image: xanderxaj/teamspeak
+    ports:
+      - 9987:9987/udp
+      - 10011:10011
+      - 30033:30033
+    volumes:
+      - teamspeak:/data
+    deploy:
+      resources:
+        limits:
+          memory: 100m
+
+volumes:
+  teamspeak:
