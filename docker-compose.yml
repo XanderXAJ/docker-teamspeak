@@ -9,9 +9,14 @@ services:
     volumes:
       - teamspeak:/data
     deploy:
+      replicas: 1
       resources:
         limits:
-          memory: 100m
+          memory: 100M
+      restart_policy:
+        delay: 2s
+        max_attempts: 10
+        window: 10s
 
 volumes:
   teamspeak:
