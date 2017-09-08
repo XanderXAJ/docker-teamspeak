@@ -18,9 +18,10 @@ Running this will build you the latest docker-teamspeak image:
 ## Running docker-teamspeak
 
 If nothing else is running on ports 9987, 10011 or 30033, launching TeamSpeak is a
-simple case of running:
+simple case of running either:
 
-    ./ts3-run.sh
+    ./ts3-run.sh      # Individual container using `docker run`
+    ./ts3-deploy.sh   # Docker Swarm stack using `docker stack deploy`. May need to run `docker swarm init first`
 
 Note: If you get an error about being unable to gain access to docker, you may
 need to add yourself to the `docker` group or prepend `sudo` to the `ts3-*` scripts
