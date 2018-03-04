@@ -1,3 +1,4 @@
 #/bin/sh
-docker build -t teamspeak .
+IMAGE=xanderxaj/teamspeak
+docker build -t $IMAGE .
 
