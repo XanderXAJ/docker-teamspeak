@@ -6,6 +6,12 @@
 
 To migrate to the official image, see [`docker-compose-official.yml`](docker-compose-official.yml), which is an equivalent of [`docker-compose.yml`](docker-compose.yml) but using [the official image][official-image].
 
+Deploy the official image by running `docker stack deploy`:
+
+```bash
+docker stack deploy teamspeak --compose-file docker-compose-official.yml
+```
+
 [official-teamspeak]: https://hub.docker.com/_/teamspeak/
 
 ## Original Outline
