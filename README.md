@@ -1,5 +1,15 @@
 # docker-teamspeak
 
+## This Project is Deprecated
+
+[TeamSpeak now maintain their own official Docker image][official-image], so there is no longer so much need for me to maintain another.
+
+To migrate to the official image, see [`docker-compose-official.yml`](docker-compose-official.yml), which is an equivalent of [`docker-compose.yml`](docker-compose.yml) but using [the official image][official-image].
+
+[official-teamspeak]: https://hub.docker.com/_/teamspeak/
+
+## Original Outline
+
 A nice and easy way to get a TeamSpeak server up and running using docker. For
 help on getting started with docker see the [official getting started guide][docker].
 For more information on TeamSpeak and [check out its website][teamspeak].

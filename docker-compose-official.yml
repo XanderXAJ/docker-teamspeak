@@ -1,0 +1,26 @@
+version: '3.6'
+services:
+  teamspeak:
+    image: teamspeak
+    ports:
+      - 9987:9987/udp
+      - 10011:10011
+      - 30033:30033
+    environment:
+      TS3SERVER_LICENSE: accept
+    volumes:
+      - teamspeak:/var/ts3server
+    deploy:
+      replicas: 1
+      resources:
+        limits:
+          memory: 100M
+      restart_policy:
+        delay: 2s
+        max_attempts: 10
+        window: 10s
+
+volumes:
+  teamspeak:
+    external:
+      name: teamspeak
