@@ -12,7 +12,7 @@ Deploy the official image by running `docker stack deploy`:
 docker stack deploy teamspeak --compose-file docker-compose-official.yml
 ```
 
-[official-teamspeak]: https://hub.docker.com/_/teamspeak/
+[official-image]: https://hub.docker.com/_/teamspeak/
 
 ## Original Outline
 
