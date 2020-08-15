@@ -2,7 +2,7 @@
 
 ## This Project is Deprecated
 
-[TeamSpeak now maintain their own official Docker image][official-image], so there is no longer so much need for me to maintain another.
+[TeamSpeak now maintain their own official Docker image][official-image]. My image provides no further benefits, so I defer to the TeamSpeak experts.
 
 To migrate to the official image, see [`docker-compose-official.yml`](docker-compose-official.yml), which is an equivalent of [`docker-compose.yml`](docker-compose.yml) but using [the official image][official-image].
 
